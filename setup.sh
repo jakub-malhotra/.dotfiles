@@ -8,6 +8,7 @@ sudo apt upgrade -y
 
 # common programs
 sudo apt remove w3m -y
+sudo apt install git -y
 sudo apt install gh -y
 sudo apt install stow -y
 
