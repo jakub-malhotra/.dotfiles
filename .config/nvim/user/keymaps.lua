@@ -13,4 +13,4 @@ vim.keymap.set("n", "<leader>e", ":Lex 30<CR>", opts)
 
 -- Insert Mode --
 -- Move to Command Mode without pressing escape --
-vim.keymap.set("i", "jk", "<ESC>", opts)
+vim.keymap.set("i", "kj", "<ESC>", opts)
