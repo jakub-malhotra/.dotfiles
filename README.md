@@ -7,8 +7,8 @@ The following need to be installed first:
 
 Then:
 - gh auth login
-- sudo rm -r .gitconfig .bashrc .config
 - gh repo clone dotfiles
+- sudo rm -r .gitconfig .bashrc .config
 - cd dotfiles
 - stow .
 - bash setup.sh
