@@ -9,7 +9,7 @@ permissions: {}
 
 jobs:
   build:
-    name: Lint
+    name: Linter
     runs-on: ubuntu-latest
 
     permissions:
