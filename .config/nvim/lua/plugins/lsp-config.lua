@@ -11,7 +11,7 @@ return {
     lazy = false,
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = {"lua_ls", "ts_ls", "jdtls"},
+        ensure_installed = {"lua_ls", "bashls", "ts_ls", "jdtls"},
       })
     end
   },
@@ -22,6 +22,7 @@ return {
       local lspconfig = require("lspconfig")
       
       lspconfig.lua_ls.setup({})
+      lspconfig.bashls.setup({})
       lspconfig.ts_ls.setup({})
       lspconfig.jdtls.setup({})
     end
