@@ -1,6 +1,9 @@
+-- you need to have NPM loaded for the LSP servers, so ensure it it installed
+-- sudo apt install npm -y
+
 return {
   {
-    "williamboman/mason.nvim",
+    "williambom:qan/mason.nvim",
     lazy = false,
     config = function()
       require("mason").setup()
