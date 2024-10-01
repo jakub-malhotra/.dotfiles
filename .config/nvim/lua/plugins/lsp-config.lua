@@ -1,4 +1,4 @@
--- you need to have NPM loaded for the LSP servers, so ensure it it installed
+-- you need to have NPM loaded for the TS LSP server, so ensure it it installed
 -- sudo apt install npm -y
 
 return {
