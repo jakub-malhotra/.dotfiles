@@ -14,3 +14,16 @@ vim.keymap.set("n", "<leader>e", ":Lex 30<CR>", opts)
 -- Insert Mode --
 -- Move to Command Mode without pressing escape --
 vim.keymap.set("i", "kj", "<ESC>", opts)
+
+-- for LSP
+local server_maps = function(bufopts)
+    vim.keymap.set("n", "gD", vim.lsp.buf.declaration, bufopts)
+    vim.keymap.set("n", "gd", vim.lsp.buf.definition, bufopts)
+    vim.keymap.set("n", "K", vim.lsp.buf.hover, bufopts)
+    vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, bufopts)
+    vim.keymap.set("n", "gr", vim.lsp.buf.references, bufopts)
+    vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, bufopts)
+    vim.keymap.set("n", "<leader>fo", function()
+      vim.lsp.buf.format({ async = true })
+    end, bufopts)
+  end
