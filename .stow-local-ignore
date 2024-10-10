@@ -24,4 +24,3 @@ _darcs
 
 # the above is the default, now these are ones I will exclude
 \setup.sh
-\.config\gh
