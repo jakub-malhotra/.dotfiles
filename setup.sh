@@ -10,8 +10,10 @@ sudo apt upgrade -y
 sudo apt remove w3m -y
 sudo apt install git -y
 sudo apt install gh -y
+sudo apt install curl -y
 sudo apt install stow -y
 sudo apt install tree -y
+sudo apt install unzip -y
 # for nvim TS LSP
 sudo apt install npm -y
 
@@ -27,9 +29,6 @@ cd .. || exit
 sudo rm -r ./temp
 
 # install programming languages, bun and Java
-sudo apt install -y default-jdk
-curl -fsSL https://bun.sh/install | bash
-source ~/.bashrc
-
-# reboot system
-sudo reboot now
+sudo apt install -y default-jdk # Java
+curl -fsSL https://bun.sh/install | bash # bun
+curl -fsSL https://deno.land/install.sh | sh # deno
