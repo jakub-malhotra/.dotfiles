@@ -14,6 +14,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias cl='clear'
+alias irubo='sudo gem install rubocop'
 
 # for bun & deno
 export BUN_INSTALL="$HOME/.bun"
