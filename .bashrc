@@ -14,6 +14,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias cl='clear'
+alias inruby='sudo apt update && sudo apt upgrade -y && sudo apt install -y ruby-full'
 alias irubo='sudo gem install rubocop'
 
 # for bun & deno
